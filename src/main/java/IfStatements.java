@@ -12,7 +12,7 @@ public class IfStatements {
      * @return - x if bool is true, otherwise return y.
      */
     public int exercise1(boolean bool, int x, int y) {
-        return 0;
+        return bool ? x : y;
     }
 
     /**
@@ -22,7 +22,7 @@ public class IfStatements {
      * @return - "Positive", "Negative", or "Zero" depending on the input.
      */
     public String exercise2(int x) {
-        return null;
+        return x > 0 ? "Positive" : (x < 0 ? "Negative" : "Zero");
     }
 
     /**
@@ -40,6 +40,6 @@ public class IfStatements {
      * @return - "Yes", "No", or "Not quite!" depending on the input. 
      */
     public String exercise3(int year) {
-        return null;
+        return (year % 4 != 0) ? "No" : (year % 100 == 0 && year % 400 != 0) ? "Not quite" : "Yes";
     }
 }
